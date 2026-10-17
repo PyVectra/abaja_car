@@ -1,0 +1,6 @@
+[submodule "src/micro_ros_agent"]
+	path = src/micro_ros_agent
+	url = https://github.com/VaishnaviPasumarthi9/abaja_car.git
+[submodule "build/micro_ros_agent/agent/src/xrceagent"]
+	path = build/micro_ros_agent/agent/src/xrceagent
+	url = https://github.com/VaishnaviPasumarthi9/abaja_car.git

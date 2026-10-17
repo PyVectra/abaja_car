@@ -1,0 +1,30 @@
+[1.058s] Invoking command in '/home/vaishu/car/src/car_control': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vaishu/car/build/car_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vaishu/car/install/car_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/car_control build --build-base /home/vaishu/car/build/car_control/build install --record /home/vaishu/car/build/car_control/install.log --install-scripts $base/lib/car_control --single-version-externally-managed install_data
+[1.305s] running egg_info
+[1.319s] writing ../../build/car_control/car_control.egg-info/PKG-INFO
+[1.319s] writing dependency_links to ../../build/car_control/car_control.egg-info/dependency_links.txt
+[1.319s] writing entry points to ../../build/car_control/car_control.egg-info/entry_points.txt
+[1.319s] writing requirements to ../../build/car_control/car_control.egg-info/requires.txt
+[1.320s] writing top-level names to ../../build/car_control/car_control.egg-info/top_level.txt
+[1.348s] reading manifest file '../../build/car_control/car_control.egg-info/SOURCES.txt'
+[1.350s] writing manifest file '../../build/car_control/car_control.egg-info/SOURCES.txt'
+[1.351s] running build
+[1.351s] running build_py
+[1.351s] copying car_control/steer_angle_t.py -> /home/vaishu/car/build/car_control/build/lib/car_control
+[1.351s] copying car_control/braking_angle_t.py -> /home/vaishu/car/build/car_control/build/lib/car_control
+[1.351s] running install
+[1.356s] running install_lib
+[1.370s] copying /home/vaishu/car/build/car_control/build/lib/car_control/steer_angle_t.py -> /home/vaishu/car/install/car_control/lib/python3.12/site-packages/car_control
+[1.370s] copying /home/vaishu/car/build/car_control/build/lib/car_control/braking_angle_t.py -> /home/vaishu/car/install/car_control/lib/python3.12/site-packages/car_control
+[1.371s] byte-compiling /home/vaishu/car/install/car_control/lib/python3.12/site-packages/car_control/steer_angle_t.py to steer_angle_t.cpython-312.pyc
+[1.372s] byte-compiling /home/vaishu/car/install/car_control/lib/python3.12/site-packages/car_control/braking_angle_t.py to braking_angle_t.cpython-312.pyc
+[1.372s] running install_data
+[1.372s] creating /home/vaishu/car/install/car_control/share/car_control/launch
+[1.372s] copying launch/dbw_bringup.launch.py -> /home/vaishu/car/install/car_control/share/car_control/launch
+[1.372s] running install_egg_info
+[1.387s] removing '/home/vaishu/car/install/car_control/lib/python3.12/site-packages/car_control-0.0.0-py3.12.egg-info' (and everything under it)
+[1.387s] Copying ../../build/car_control/car_control.egg-info to /home/vaishu/car/install/car_control/lib/python3.12/site-packages/car_control-0.0.0-py3.12.egg-info
+[1.389s] running install_scripts
+[1.492s] Installing brake_node script to /home/vaishu/car/install/car_control/lib/car_control
+[1.492s] Installing steer_angle_t_node script to /home/vaishu/car/install/car_control/lib/car_control
+[1.492s] writing list of installed files to '/home/vaishu/car/build/car_control/install.log'
+[1.516s] Invoked command in '/home/vaishu/car/src/car_control' returned '0': DEBUGINFOD_URLS=https://debuginfod.ubuntu.com PYTHONPATH=/home/vaishu/car/build/car_control/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/vaishu/car/install/car_control/lib/python3.12/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/car_control build --build-base /home/vaishu/car/build/car_control/build install --record /home/vaishu/car/build/car_control/install.log --install-scripts $base/lib/car_control --single-version-externally-managed install_data
