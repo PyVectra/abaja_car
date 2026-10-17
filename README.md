@@ -34,17 +34,21 @@ cd abaja_car
 docker build -t abaja_car .
 
   ```
-To run/restart the container remove the --build tag from the command
+### Step 3 : Running the container
 ```bash
-docker compose up -d
+docker run -it --rm \
+  --privileged \
+  --net=host \
+  -v /dev:/dev \
+  abaja_car:latest
 ```
 
-### Step 3 : Attaching to the Container
+### Step 4 : Attaching to the Container
 ```bash
 docker exec -it abaja_car /bin/bash
 ```
 
-### Step 4 : Running the nodes 
+### Step 5 : Running the nodes 
 ```bash
 cd car/src/car_control
 ros2 launch car_control dbw_bringup.launch.py
