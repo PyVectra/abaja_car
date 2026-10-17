@@ -1,6 +1,6 @@
 # Autonomous DBW Systems - ROS 2 Jazzy
 
-This repository contains the ROS 2 Drive-by-Wire (DBW) control system and Micro-ROS agent interface for autonomous vehicle steering and braking actuators powered by an ESP32 microcontroller.
+This repository contains the ROS 2 Drive-by-Wire (DBW) control system and Micro-ROS agent interface for autonomous vehicle steering and braking actuators powered by an ESP32 microcontroller 
 
 ---
 
