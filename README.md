@@ -22,22 +22,26 @@ Ensure your host machine has Docker installed and proper serial device permissio
 #### Option A: Clone Directly
    ```bash
    git clone --recurse-submodule https://github.com/VaishnaviPasumarthi9/abaja_car.git
-   cd car
+   cd abaja_car
   ```
 #### Option B: Fork it first (preferred)
 ```bash
 git clone --recurse-submodule https://github.com/VaishnaviPasumarthi9/abaja_car.git
-cd car
+cd abaja_car
   ```
 ### Step 2 : Run the Dockerfile
 ```bash
-docker compose up -d --build
+docker build -t abaja_car .
+
   ```
 To run/restart the container remove the --build tag from the command
+```bash
+docker compose up -d
+```
 
 ### Step 3 : Attaching to the Container
 ```bash
-docker exec -it my_ros_env /bin/bash
+docker exec -it abaja_car /bin/bash
 ```
 
 ### Step 4 : Running the nodes 
