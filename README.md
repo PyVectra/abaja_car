@@ -26,7 +26,7 @@ Ensure your host machine has Docker installed and proper serial device permissio
   ```
 #### Option B: Fork it first (preferred)
 ```bash
-git clone --recurse-submodule https://github.com/VaishnaviPasumarthi9/abaja_car.git
+git clone --recurse-submodule https://github.com/<your-username>/abaja_car.git
 cd abaja_car
   ```
 ### Step 2 : Run the Dockerfile
