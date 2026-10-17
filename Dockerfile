@@ -11,7 +11,8 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 RUN mkdir -p src && \
     /bin/bash -c "source /opt/ros/jazzy/setup.bash && colcon build"
 
-
+# 3. Copy your project code into the workspace
+COPY . /car/
 
 # 4. Auto-source ROS 2 and micro-ROS on startup
 RUN echo "source /opt/ros/jazzy/setup.bash" >> /root/.bashrc && \

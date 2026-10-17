@@ -1,0 +1,15 @@
+services:
+  dbw_controller:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: dbw_workspace:latest
+    container_name: dbw_workspace_container
+    network_mode: "host"
+    privileged: true
+    volumes:
+      - /dev:/dev
+    stdin_open: true
+    tty: true
+    restart: unless-stopped
+    command: bash
