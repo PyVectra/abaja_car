@@ -31,16 +31,12 @@ cd abaja_car
   ```
 ### Step 2 : Run the Dockerfile
 ```bash
-docker build -t abaja_car .
+docker compose up -d --build
 
   ```
 ### Step 3 : Running the container
 ```bash
-docker run -it --rm \
-  --privileged \
-  --net=host \
-  -v /dev:/dev \
-  abaja_car:latest
+docker compose up
 ```
 
 ### Step 4 : Attaching to the Container
@@ -50,8 +46,11 @@ docker exec -it abaja_car /bin/bash
 
 ### Step 5 : Running the nodes 
 ```bash
-cd car/src/car_control
-ros2 launch car_control dbw_bringup.launch.py
+cd car/
+colcon build
+source install/setup.bash
+ros2 launch car_control dbw_bringup.launch
+
 ```
 
 
