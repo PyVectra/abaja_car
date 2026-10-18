@@ -28,10 +28,20 @@ Ensure your host machine has Docker installed and proper serial device permissio
 ```bash
 git clone --recurse-submodule https://github.com/<your-username>/abaja_car.git
 cd abaja_car
-  ```
+```
+
 ### Step 2 : Run the Dockerfile
 ```bash
+cat <<EOF > .env
+USERNAME=$(whoami)
+UID=$(id -u)
+GID=$(id -g)
+WS_NAME=car
+TMUXP_CONF=tmuxp.yaml
+ENTRYPOINT=entrypoint.sh
+EOF
 docker compose up -d --build
+
 
   ```
 ### Step 3 : Running the container
