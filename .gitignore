@@ -1,1 +1,11 @@
-my_ros_env.tar.gz
+# ROS 2 build directories
+build/
+install/
+log/
+
+# Docker / OS generated files
+.DS_Store
+*.swp
+
+# Environment files with sensitive credentials (if applicable)
+.env.local

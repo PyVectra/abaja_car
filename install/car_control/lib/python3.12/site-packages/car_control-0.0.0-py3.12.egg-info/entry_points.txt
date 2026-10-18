@@ -1,3 +1,0 @@
-[console_scripts]
-brake_node = car_control.braking_angle_t:main
-steer_angle_t_node = car_control.steer_angle_t:main
